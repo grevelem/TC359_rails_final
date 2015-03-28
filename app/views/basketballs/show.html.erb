@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @basketball.name %>
+</p>
+
+<p>
+  <strong>Position:</strong>
+  <%= @basketball.position %>
+</p>
+
+<p>
+  <strong>Age:</strong>
+  <%= @basketball.age %>
+</p>
+
+<p>
+  <strong>College:</strong>
+  <%= @basketball.college %>
+</p>
+
+<p>
+  <strong>Currently playing:</strong>
+  <%= @basketball.currently_playing %>
+</p>
+
+<%= link_to 'Edit', edit_basketball_path(@basketball) %> |
+<%= link_to 'Back', basketballs_path %>

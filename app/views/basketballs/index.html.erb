@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Basketballs</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Position</th>
+      <th>Age</th>
+      <th>College</th>
+      <th>Currently playing</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @basketballs.each do |basketball| %>
+      <tr>
+        <td><%= basketball.name %></td>
+        <td><%= basketball.position %></td>
+        <td><%= basketball.age %></td>
+        <td><%= basketball.college %></td>
+        <td><%= basketball.currently_playing %></td>
+        <td><%= link_to 'Show', basketball %></td>
+        <td><%= link_to 'Edit', edit_basketball_path(basketball) %></td>
+        <td><%= link_to 'Destroy', basketball, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Basketball', new_basketball_path %>
