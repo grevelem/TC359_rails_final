@@ -1,6 +1,6 @@
 class BasketballsController < ApplicationController
   before_action :set_basketball, only: [:show, :edit, :update, :destroy]
-
+  before_action :only_allow_signed_in_users, except: [:index, :show]
   # GET /basketballs
   # GET /basketballs.json
   def index

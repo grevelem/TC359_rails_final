@@ -12,9 +12,21 @@
   <li><%= link_to 'About', about_path %></li>
   <li><%= link_to 'Cat Pictures', cat_pictures_path %></li>
   <li><%= link_to 'Basketball Directory', basketballs_path %></li>
+  <% if user_signed_in? %>
+  <li>Signed in in as <%= current_user.email %></li>
+  <li><%= link_to "Sign Out", sign_out_path, method: :delete %></li>
+<% else %>
+  <li><%= link_to "Sign In", sign_in_path %></li>
+<% end %>
 </ul>
 
 <%= yield %>
+
+<% flash.each do |type, message| %>
+  <div class="<%= type %>">
+    <p><%= message %></p>
+  </div>
+<% end %>
 
 </body>
 </html>
