@@ -23,8 +23,10 @@
         <td><%= basketball.college %></td>
         <td><%= basketball.currently_playing %></td>
         <td><%= link_to 'Show', basketball %></td>
+        <% if user_signed_in? %>
         <td><%= link_to 'Edit', edit_basketball_path(basketball) %></td>
         <td><%= link_to 'Destroy', basketball, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <% end %>
       </tr>
     <% end %>
   </tbody>
