@@ -33,5 +33,6 @@
 </table>
 
 <br>
-
+<% if user_signed_in? %>
 <%= link_to 'New Basketball', new_basketball_path %>
+<% end %>

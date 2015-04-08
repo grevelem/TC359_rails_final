@@ -24,6 +24,7 @@
   <strong>Currently playing:</strong>
   <%= @basketball.currently_playing %>
 </p>
-
+<% if user_signed_in? %>
 <%= link_to 'Edit', edit_basketball_path(@basketball) %> |
+<% end %>
 <%= link_to 'Back', basketballs_path %>
