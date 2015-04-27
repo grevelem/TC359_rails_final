@@ -13,6 +13,7 @@ gem 'coffee-rails', '~> 4.1.0'
 # gem 'therubyracer', platforms: :ruby
 gem 'slim'
 
+gem 'passenger'
 #Gemile for Rails 3+, Sinatra, and merb
 gem 'will_paginate', '~> 3.0.5'
 # Use jquery as the JavaScript library
