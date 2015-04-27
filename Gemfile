@@ -13,6 +13,8 @@ gem 'coffee-rails', '~> 4.1.0'
 # gem 'therubyracer', platforms: :ruby
 gem 'slim'
 
+gem 'slim-rails'
+
 gem 'passenger'
 #Gemile for Rails 3+, Sinatra, and merb
 gem 'will_paginate', '~> 3.0.5'
