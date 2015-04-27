@@ -31,7 +31,8 @@
     <% end %>
   </tbody>
 </table>
-
+<br>
+<%= will_paginate @basketballs %>
 <br>
 <% if user_signed_in? %>
 <%= link_to 'New Basketball', new_basketball_path %>

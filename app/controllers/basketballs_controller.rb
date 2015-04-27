@@ -5,6 +5,7 @@ class BasketballsController < ApplicationController
   # GET /basketballs.json
   def index
     @basketballs = Basketball.all
+    @basketballs = Basketball.paginate(:page => params[:page], :per_page => 5)
   end
 
   # GET /basketballs/1
