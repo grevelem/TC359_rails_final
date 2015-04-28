@@ -15,6 +15,8 @@ gem 'slim'
 
 gem 'slim-rails'
 
+gem 'kaminari'
+
 gem 'passenger'
 #Gemile for Rails 3+, Sinatra, and merb
 gem 'will_paginate', '~> 3.0.5'
